@@ -1,6 +1,10 @@
 import sqlite3
 
 def execute_sql_commands(db_name='loja_eletronicos.db'):
+    """
+    Executa uma série de comandos SQL para manipular a tabela Produtos em um banco de dados SQLite.
+    """
+
     conn = None
     try:
         conn = sqlite3.connect(db_name)
